@@ -1,0 +1,139 @@
+github.com/zerockcode
+
+플랫폼.........
+...... 
+
+New -> Spring Starter Project
+
+Name- > b01
+Gruopt~~
+
+next -> Dev tool-> spring, lom <2개>
+
+	web -> Spring web starter
+
+라이브러리의 자동 결정과 XML없는 환경/ 장점이자 단점?
+
+
+
+https://wepplication.github.io/tools/asciiArtGen/
+배너 바꾸기...
+아스키 변환사이트
+
+
+
+스프링 부트는 jsp사용하지 않고 timeleaf 백년초를 ㅡㅡ????
+
+백년초문법 ?  ? ??  
+
+시큐리티 쓸때 
+
+Spring Boot에서................ (?)
+테이블도 자동으로 생성됩니다.
+
+Hibernate 듀토리얼
+https://howtodoinjava.com/hibernate/hibernate-insert-query-tutorial/
+DB설계
+Mybatis 썼더니만.....
+자바코드를 짜는데 너무 db에 종속적이다.
+
+내가 자동으로 sql문을 만들면 어떨까 ? ?
+
+
+변할것 같으면 -> 뜯어내자.
+
+
+Mybatis -> sqlsessoin
+
+11:30 제네릭타입.
+
+https://howtodoinjava.com/hibernate/hibernate-insert-query-tutorial/
+Hibernate 쓸때 try catch->> 써야하는데
+
+스프링에서는 ...........;;
+
+인터페이스 -> 걔를 구현한..
+인터페이스 추상페이스 추상클래스........
+
+Abstract 하면 뭘 만들어야하니까.....
+
+new criteria --.--.--.(빌드패턴,,)
+
+쿼리 매소드가 편하긴 한데 복잡해질떄..............
+어려워져서 ... ㅠㅠㅠ
+
+JPQL.
+
+@어노테이션 단점
+수정하면 다시 해야하고.
+
+동적으로 변경이 안되
+
+리턴을 받아와서 null이면;
+
+11:51
+3.단순 게시물 처리
+
+메소드의 이름이 쿼리를 구성한다.
+findbyTitle = where title....
+
+page<T> 페이지처리까지...
+
+
+페이스북 그래프QL
+https://velopert.com/2318
+
+qboard 하면 q가 생김.?
+
+db설계~~ _____
+
+DB모델링~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1차도메인 명사 (이름인거지)
+회원과 상품이 있으면 구매라는 (동사에 ) 히스토리~~~~~~
+
+
+@Getter
+
+@Setter
+
+@Data 하지마!!!!!!!!!!!!! - toString 시 관계형에서 무한루프생겨
+
+래퍼지토리가 여러개일때?
+게시판 
+몸값을 높이려면
+하드웨어 비싼거를 써라 
+php(Linux/Mysql/Apach) vs JSP(unix/Oracle/WAS) 몇천/몇천/몇천
+
+Many 말이나오면 M대 n
+원하는 테이블의
+
+PdsBoardRepository
+
+
+
+
+웹크롤링을 예제)
+네이버는 안되 / 자동 Autumation까지 막음.
+오전 11:45
+https://azure.microsoft.com/ko-kr/services/cognitive-services/face/
+face api
+
+Online JSON VIewer
+사람인 / 11번가까지는 ok~~
+
+
+from time import sleep
+
+from selenium import webdriver
+
+driver = webdriver.Firefox()
+driver.maximize_window()
+
+sleep(3)
+
+driver.close()
+
+
+
+
+

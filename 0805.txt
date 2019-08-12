@@ -1,0 +1,169 @@
+node.js npm <- 메이븐같은 
+컨트롤 c 종류
+코드 안나올때
+
+C:\Users\bitcamp\AppData\Local\Programs\Microsoft VS Code\bin
+환경변수 설정
+npm install -g create-react-app
+
+
+npx create-react-app my-project
+
+-관리자 권환으로 실행 ㅋㅋㅋㅋㅋㅋㅋㅋ
+
+
+-깃 처음 세팅할때 ....???
+
+터미널 이후 막힘................
+
+비쥬얼스튜디오 code .으로 합니다~~~
+
+
+git 연동................ <커밋했을때 깃에 올라가는거까지..........>
+git config --global user.name "LYK"
+
+-g 전역..
+
+git config --global user.email "123cader321@gmail.com"
+
+
+https://www.npmjs.com/package/request
+
+npm run bulid
+
+11: 
+노드JS 스택구조. V8을 따로 빼서 C++로 동작되는것을 js로 동작할 수 ..
+노드 <백앤드, 프론트앤드 둘다..
+
+src app.js (바벨)
+노드에서...... import 코드
+
+oop기능 떨어짐.
+
+C:\Users\bitcamp\RWeb
+위치
+파일 모듈
+
+노드_모듈스
+public
+src <- 여기다 설치
+
+보낼때 모듈스는 빼고................ npm init 
+
+npm init <-package.json생성.프로젝트...
+npm install
+
+npm <- 외부에 있는것을 oop로... 하는 개념으로 알자
+깃헙에서 npm install하면 패키지.json에 있는것을 모두 다운받아짐.
+
+git clone https://github.com/velopert/react-skeleton.git 
+디자인 따오기.
+
+localhost:3000 /F123 후 Network가면 
+manifest.json -> 바로가기..
+
+jsx없이 개발
+
+
+
+
+
+
+
+react material design.. 유료 무료를 template...
+
+npm start 시작...
+
+디자인 입히기 ->
+
+노드js 
+-npm
+
+-babel (낮은 버전으로 동작하게끔. 
+
+-ServiceWorker
+
+
+
+동작 - public
+(App.js)
+
+리액트 싱글페이지 하나로 다동작. my-project
+public -> index.html (id=root)
+위치 src -> index.js ..ReactDOM.render(뿌려줘라.....)
+
+함수형 컴퍼넌트 - return 존재               *상태를 유지하지 않습니다.
+															   *단순 뷰어의 역할
+
+html 코드.. 결과적으로 컴퍼넌트1 = div 1하나
+컴퍼넌트가 먼데?
+기존 웹에서 구분이 없어? <div>로 구분
+컴포넌트 만들꺼니까 대문자로 Sample1.js
+render()로 만들어졌네?? 
+Sample1.js props 변수를 전달
+
+클래스형 컴퍼넌트				   *상태를 유지합니다.
+					   *instace variable
+					   *하위에 여러 컴퍼넌트
+class Sample2 extends Component{
+export default 앞에 이거 써서 자주씀..
+render()함수
+
+
+
+------------------- 게시판 CRUD ----------------- 페이지 vs 컴퍼넌트
+전통적인 url 베이스 <ajax 개발위주라고 가정>
+url을 결정, 
+/register  /list 로 나눠준다..
+
+/list
+1. 목록뿌려주는애 A개발
+2. 페이징처리하는얘 B개발
+
+
+-------------------------------------------------
+컴퍼넌트
+
+Register 컴퍼넌트
+
+list 컴퍼넌트
+(어느 url에서 가져올건데?, 어느 파라미터를 전달할건데?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+리액트 이딴거 안됨(동적 ajax 누르면 새로만드는 div)...
+
+
+
+------------------TodoList----------------------
+어플리케이션 제작.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,320 @@
+hibernate에 
+로그를 찍고 싶은디..
+https://www.popit.kr/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-auto-configuration%EA%B3%BC-jpa%ED%95%98%EC%9D%B4%EB%B2%84%EB%84%A4%EC%9D%B4%ED%8A%B8-sql%EB%AC%B8-%EB%A1%9C%EA%B9%85/
+
+back end , DB 쪽이랑 JAVA쪽
+
+sql -> 정보처리기사 위주로..
+다음 
+
+개발순서: 
+도메인 정의 - 도메인주도 설계
+
+Repository 
+
+Test 환경에서 테스트
+
+웹 화면
+
+검색도 자동으로 쿼리문으로!!!!!
+
+ㅠㅜ
+아까는 page를 반환에서 pageMaker 반환을..
+반환처리를....
+
+자기소개서에 기술역량 (기본기)
+자바에서 싱글톤패턴을... 
+
+DB배웠으면 모델링하잖아? 물리/ 논리
+
+Spring / boot
+Node.js 리액터 아우 시바앙 허리아파
+8월 9월 ㅜㅜ
+어캐 하냐 ㅜㅜ
+db모델링. 
+
+기술직 신입사원용
+-직무에 맞는 기술(최근 유행)
+-기본기
+-자기소개서에 기술역량(기본기)
+ -면접관이 보고 질문할내용
+ -관심있는 기술 우선적
+ -자신없는 내용 카테고리화 시켜서 
+ -제목만으로 무슨 학습을 했는지 알 수 있게..
+ -부연설명은 실습과제.
+
+-포트폴리오 금기 사항
+-너무 많은 기술을 자랑하지 마-잇!
+-구현보다는 컨셉!!!!!!!!!!!! - 게시판금기.
+중고나라/ 게시판 , 요기요 / <특정 솔루션 이외에...gis
+아 너무 중얼중얼거리는듯 ...
+완성도 보다는 아키텍쳐라니 ㅡ  ㅠ ...
+
+주요기능(3~4 ... 
+철저하게 화면 위주, 사용자 위주
+
+기술직 신입사원용
+
+눈에 안띄는 (통계)어캐 표현할껀데 ㅠ
+로그로 표현..........................
+
+적응력 ㅡㅡ??
+그림으로 표현하자 (화살표잘쓰고..)
+
+개발자협업 관련 툴 우선으로 하자
+
+- 협업관련해서는 개발일정/인원
+-방법론에 대해서 
+
+구성 10페이지 이내 가능하면 세로로 pdf로 인쇄
+맨 앞장에 연락처추가
+목차에 대해서.. 넣을까 말까?
+우측상단에!
+목차 시 .페이지번호 -- 궁서체폰트......
+
+나눔고딕 폰트. 많이. database 그냥 영어로..
+JQuery. 대소문자.....
+약어 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+뭐 그렇게 싫은게 많아? 쉬이벌.............
+
+우위를 잡았다. 감정적으로 판단 
+까이니까 조심하라구우~ 
+몇프로에 향상됬다. 
+QnA 땡스 붙이지마 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ
+아웅 어쩌라구 ㅠㅠㅠㅠㅠㅠ
+지금 세로로 쓰잖아?
+
+
+-이번주에 만들.... 어캐하냐 ㅠㅠ
+
+주요내용 
+ 
+
+
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+INFO : org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@57d5872c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@667a738, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@36f0f1be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@157632c9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ee12bac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55040f2f]
+INFO : com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+
+
+
+
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+ <select name="typeView">
+                <option value="">--</option>
+	            <option value="T" ${cri.type == 'T'? "selected":"" }>제목</option>
+	            <option value="C" ${cri.type == 'C'? "selected":"" }>내용</option>
+	            <option value="W" ${cri.type == 'W'? "selected":"" }>작성자</option>
+	            <option value="TC" ${cri.type == 'TC'? "selected":"" }>제목+내용</option>            
+	          </select>
+	          <input type='text' name='keywordView' value="${cri.keyword}">
+	          <button class="btn btn-primary searchBtn">Search</button>
+
+<table border="1">
+   <tr>
+     <td>BNO</td>
+     <td>TITLE</td>
+     <td>WRITER</td>
+     <td>REGDATE</td>
+   </tr>
+   <c:forEach items="${list}" var="vo">
+   <tr>
+     <td><c:out value="${vo.bno}"/></td>
+     <td><a href='${vo.bno}' class='view'><c:out value="${vo.title}"/></a></td>
+     <td><c:out value="${vo.writer}"/></td>
+     <td><c:out value="${vo.regdate}"/></td>
+   </tr>
+   </c:forEach>
+ </table>
+
+<style>
+.pagination {
+  list-style: none;
+  display: flex;
+  
+}
+
+.pagination li {
+  margin: 10px;
+  float: left;
+}
+
+.active {
+  background-color: red;
+  font-weight: bold;
+}
+
+</style>
+ 
+ <ul class="pagination">
+<c:if test="${pm.prev}">		 
+   <li class="page-item"><a class="page-link" href='${pm.start -1 }'>Previous</a></li>
+   </c:if>
+   
+   <c:forEach begin="${pm.start}" end="${pm.end}" var="idx">
+   <li class="page-item ${pm.current==idx?"active":""}"><a class="page-link " href='${idx}'>${idx}</a></li>
+   
+   
+   </c:forEach>
+   
+   <c:if test="${pm.next}">
+   <li class="page-item"><a class="page-link" href='${pm.end +1}'>Next</a></li>
+   </c:if>
+ </ul>
+ 
+ <form id="actionForm">
+   <input type='hidden' name="bno">
+   <input type='hidden' name="page" value="${cri.page}">
+   <input type='hidden' name="type" value="${cri.type}">
+   <input type='hidden' name="keyword" value="${cri.keyword}">
+ </form>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+<script>
+
+var actionForm = $("#actionForm");
+
+$(".view").on("click", function(e){
+	
+	e.preventDefault();
+	var bno = $(this).attr("href");
+	
+	actionForm.find("input[name='bno']").val(bno);
+	actionForm.attr("action","/board2/read");
+	actionForm.submit();
+	
+});
+
+
+$(".page-link").click(function(e){
+	e.preventDefault();
+	
+	var pageNum = $(this).attr("href");
+	
+	actionForm.find("input[name='page']").val(pageNum);
+	actionForm.attr("action","/board2/list");
+	actionForm.submit();
+	
+})
+
+
+$(".searchBtn").click(function(e) {
+	
+	var typeValue = $("select[name='typeView']").val();
+	
+	actionForm.find("input[name='page']").val(1);
+	actionForm.find("input[name='type']").val(typeValue);
+	actionForm.find("input[name='keyword']").val($("input[name='keywordView']").val());
+	
+	actionForm.submit();
+})
+
+
+</script>  
+  
+
+</body>
+</html>
+
+틀을 몇개를 외울까....;;
+
+웹 <스프링 서버> 
+
+Res 반환시 json
+
+pathVA url 경로추출
+
+restcont 
+09:30
+스프링부트 data.sql
+초기 데이터
+
+db설계랑 oop설계랑 안맞을때
+domain 주도 설계가 안되.
+
+막 내려가잖아?
+
+DB_위주의 설계가 중요하니까.
+
+백앤드뽑을때.(오라클,mysql..)
+
+oop는 하청이 가지는데.
+-디지털타임스
+
+2가지만 기억하자. 리턴타입이 callback 언제올지모르자나
+
+Json.parser-> json _ JAva 오브젝트로 변경
+json. 
+
+JSON.parse()란?
+
+parse 메소드는 string 객체를 json 객체로 변환시켜줍니다.
+
+
+
+
+JSON.stringify란?
+
+stringify 메소드는 json 객체를 String 객체로 변환시켜 줍니다.
+
+mode 전역변수 .
+
+10:52
+var mod;? 
+MVC MVVM - view Model이란 개념이 먼데? Json이 아닌 객체일꺼야
+Model 순수한 데이터
+
+view 상태를 유지하지 않습니다. 그래서 session, cookie쓰지않나요?
+
+
+어떤글이 열려있고 닫혀있는지 알아야해용
+
+상태를 유지할 필요가 있습니다.
+서울 부산 대구 에서 부산 클릭시 서울 대구 줄이고.
+객체가 있겠지?
+view 모델이 없을때는 전역변수를 남발했겠지..
+
+리액트나 vu.js에서
+
+전역피할려구 closer();;;
+
+전역으로 처리하면 꼬이자나. 
+근데 그걸 캡슐화시키면???
+
+외부는 componont만 보는거야(View+ViewModel) -> Area
+
+<Area></Area>
+
+댓글 수정하거나 삭제할 때 modal을 열고 닫을때
+상태를 유지해야하니까 전역변수를 추가... ㅠ
+
+
+
+
+모들버튼 눌러 그럼 add잖아?
+댓글 내용 jone 객체로 만듬 .val();
+
+thyleaf 쓰실때요... html< 인코딩에 신경써주세요 >
+window- pre -> workspace utf-8
+
+
+동적으로 JPL 못사용해 
+
+
+내가 문자열을 쓰는게 아니라 코드로.....;;

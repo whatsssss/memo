@@ -1,0 +1,94 @@
+양방향일떄
+게시물 - 댓글은 단방향일
+
+https://blog.woniper.net/255
+JPA oRM 표준 기술로
+Hibernate... 
+
+Mapped by 테이블이 3개에서 2개가 됨
+
+Repository
+게시판 따로 댓글따로인경우강
+있어서 따로따로만들자..
+
+
+lazy loading
+-> freeboard의 entity를
+가져오니까 댓글을 찾을 수..
+
+
+필요한 순간까지 미룬다.
+lazy initializing
+얘가 null 인지 아닌지 다 확인하고
+초기화..
+
+select freeboard0_.bno as bno1_1_, freeboard0_.content as content2_1_, freeboard0_.regdate as regdate3_1_, freeboard0_.title as title4_1_, freeboard0_.updatedate as updateda5_1_, freeboard0_.writer as writer6_1_ from tbl_freeboards freeboard0_ where freeboard0_.bno>? order by freeboard0_.bno desc limit ?
+
+select freeboard0_.bno as bno1_1_, freeboard0_.content as content2_1_, freeboard0_.regdate as regdate3_1_, freeboard0_.title as title4_1_, freeboard0_.updatedate as updateda5_1_, freeboard0_.writer as writer6_1_ from tbl_freeboards freeboard0_ where freeboard0_.bno>? order by freeboard0_.bno desc limit ?
+
+
+select replies0_.board_bno as board_bn6_0_0_, replies0_.rno as rno1_0_0_, replies0_.rno as rno1_0_1_, replies0_.board_bno as board_bn6_0_1_, replies0_.reply as reply2_0_1_, replies0_.replydate as replydat3_0_1_, replies0_.replyer as replyer4_0_1_, replies0_.updatedate as updateda5_0_1_ from tbl_free_replies replies0_ where replies0_.board_bno=?
+2019-07-17 14:40:44.579  INFO 3376 --- [  
+
+이따구로 짜면안되...
+쿼리를 계속 날리잖아... 게시판에 댓글 한번 날리는데 10번씩 뿌림..
+
+원글만 가져오지(lazy) ->
+게시물가져올떄 ㅠ_ㅠ
+
+page할떄 
+
+https://ko.wikipedia.org/wiki/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)
+비쥬얼.. 스튜디오.. 코드
+
+자바가, 자바스크립트 코드가 다 동작하는게 일렉트론js에 엊히기떄문에
+
+마이크로아키텍쳐에서 살고있는데;.. 
+여러분이 가진 서버와 정보.. 다양한 정보에 
+(ex 미세먼지 api)
+모바일 어플리케이션에서 쓸꺼꼬(스마트폰)
+nhcomi
+데스크탑 어플리
+
+웹페이지에서 restapi중에 자바스크립트도 있음. .
+사진을 찍고 바로 보내면 얘가 울고있는지 바로 확인 
+서버사이드에 경향은 서버사이드는 점점 화면을 할려고하지 않음..
+
+SinglePage AP. Web APP NAtive APP, nodwjs나 플라스크장고나.
+그 Ajax할때 (fetch, axios, jquery) 데이터를 뿌리는 방법을 하지.
+화면개발을 하지않거등............
+
+Nuxt.js <= view쪽 Next.js <= 리액트쪽,,
+jsp쪽을 벗어나기위햌ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+그럼 뭐쓰는데? 서버사이드를 랜더링 하는 타임리프를 쓴다고 하네욧..;
+
+어정정저엊엊어 확장자가 html로 하면 문법적으로 
+html 스럽고 . jsp보다 ...;;;;
+
+
+타임리프 -> 
+
+4시
+
+th:with 
+<table border="1" th:with="target='u0001'">
+-----------------------------------------------------
+뷰나 리액트에서 똑같은 개념임;
+with나오면 컨텍스트 (범위)
+테이블 태그안에 target이란 변수는 테이블안에서만 동작 가능
+
+템플릿문법~~ view 리액트~~~
+
+예시
+
+var result = succees;
+	     "      "
+석세스라는 변수가 있다.
+
+타임리프는 알아서 커텐션을 붙여준다_)
+올.............
+var result = "success";
+
+전통저
+
+메모리부분 캐시라서 바뀌는 부분만. thymleaf.cach 못하게

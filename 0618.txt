@@ -1,0 +1,210 @@
+
+- 프로세스 통일
+
+- 코드 재활용
+
+1. 스프링 프레임워크~~~~~~
+결국에 중요한건 OOP 야 -
+OOP이해 맥도날드 
+혼자일해?
+
+점원 ----------------- 주방장 (의존관계)
+:new cook();
+
+의존성주입 : 매트릭스..............
+
+
+Focus가 객체지향 
+
+ex 다른 프레임워크
+웹에서만 쓴다거나 Mybatis-> DB에서만 쓴다거나.
+(기술 : 플랫폼에 맞춘다). DB에 OOP를 쓸까? DRM
+
+인터페이스목적: 실체가 뭔지 모르게..
+어떤타입을 쓸지 몰라 ...???
+
+
+서블릿 컨텍스트 - tomcat
+1.(@WebSerblet 자동으로... 기능을 가짐(container))
+죽였다 살렸따..
+
+2.그래서 라이프사이클을 따라가진다.(생명주기)
+
+----------------------------------------------
+git 사용법 익히333333333333
+클래스 정의
+요구사항
+설정-
+
+2.5특이점 (JDK5버전 지원) Annotation.
+
+오후 git 설치 
+git에는...... team 
+local repository
+remote repository
+
+깃헙 저장소에 하나씩... 하는거고
+https://github.com/whatsssss/kn2019 추가 +_+!
+123cade
+이번에 하는거는 여러개 프로젝트를 동일한 깃에 한번에
+
+pom.xml 설정
+file -> new -> legancy project -> simple spirng util..
+
+maven dependencies에서 스프링 버전 5.1.7 추가
+
+
+<org.springframework-version>
+142줄?? maven 
+<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.8</target>
+
+후에 maven - update업데이트 하기
+
+
+2:30 
+인터넷 source tree
+깃대신에 소스트리를 사용하는데가 있음(팀별로)
+
+
+2:37 Sping 서버세팅  window- preferce -server/Run
+add apach 9 (위치 c 안에)에 jdk 설정 
+
+2:45웹기능까지 포함해서 받는거..
+Spring frame 은 web과 다른거 
+동시에 사용가능 에 대해서 설정하고
+web 설정은 src파일 아래 appServ -> servlet-context.xml
+
+일반적 퍼시스트 dao , root context xml으로 갑니다..
+
+2:51 new service.java
+root-context에 bean 추가하니까 S생김
+@Autowired (bean 추가해줘) HomeController에 
+<bean class="org.zerock.service.HelloService"></bean>
+
+-------------------------------------------------
+그러므로 bean 추가 후에 무조건 테스트 해야함.
+bean 추가 안하면 에러뜸
+
+그렇다면 bean 으로 등록하는 얘의 기준이 무얼까?
+
+Spring에 bean으로 등록한는 얘들은
+ 중요한 / parameter 하고 return으로 쓰는 얘가 아니라
+DTO VO 가 아니라. <- 한번 서비스 하고 없어지는얘들
+
+핵심적인 놈들만 잡는다. controller, bao
+
+3:15 root-context에 context추가
+<context:component-scan base-package="org.zerock.service"></context:component-scan>
+스캔해서 밑에 있는거 빈으로 추가
+-> service에 @Service 추가
+
+
+pom.xml -38번쨰줄 추가
+<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+70번쨰 줄 log4j 3줄로 만들기
+100번쨰 Test 4.12버전 
+
+
+3:24 테스트 코드 만들기
+<실패 ㅋㅋㅋ>
+
+3:45 Mysql 다운로드
+https://dev.mysql.com/downloads/file/?id=486088
+
+DB확인
+4:30 dependency 등록
+https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.16
+
+192.168.41.52
+
+
+의존성 주입 방법 (세 가지)
+
+- 추천 : 생성자를 통한 전달
+
+스프링에서 빈(bean)?
+
+- 스프링이 클래스 로딩 해서 객체를 생성하고 관리하는 대상
+
+클래스중에서 어떤 클래스를 빈으로 설정?
+
+- 핵심적인 역할을 하는 로직 위주의 객체
+
+- VO, DTO 빈으로 설정하지 않음
+
+------------------------------
+스프링 4.3 자동주입
+
+@ 생략가능.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

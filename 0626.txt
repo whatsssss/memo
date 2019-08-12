@@ -1,0 +1,171 @@
+https://atin.tistory.com/639
+
+int plus(int vi, int v2)
+vs 
+에서 변수를 하나더 늘리려면 
+니가 파라미터를 여러개 던질거면 아
+-갑자가 v3 상속받을때..
+
+라즈베리용 - 적외선 15,---
+
+---------------------------------------
+
+page 번호를 유지하면서  
+
+<a 태그> 한글/ 공백 특수문자에서 문제가.
+
+---------------------------------------
+MVC 기본사상
+view에서는 출력만 해야한다 / if와 for루프정도.
+
+total 카운트 전달해주면.
+화면에 필요한것만 묶자
+(이전 다음 현재페이지 끝페이지, .....)
+
+-> 화면 뿌리는 입장에서는
+이전과 다음이 있으니까 이전, 다음 링크만 만들게/
+
+
+링크를 만드는
+서버사이드에서
+
+자바스크립트에서. 링크를 만드는 방법()
+1단계. bno를 criteria로 같이 합치면 좋지않을까 ^?^
+criteria.java를 바꿔주자 ㅎㅎㅎㅎㅎㅎ(Integer bno추가) 
+
+
+2단계 보드컨틀롤러 가서 list수정^>^ bno->cri.getBno()
+
+3단계 list.jsp수정
+
+크리테리아 왜 만들었지 ? 
+수정할때 bno / title. com..
+보드 컨트롤러 ->list에서
+파라미터 쓰지만 뷰까지 전달할꺼니까 @motelAttribute
+
+화면쪽에 게시물 목록도 전달해줄꺼야 뷰쪽에 더 필요.
+카트 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ-> 
+
+원래 a 태그는 get방식이죵?-업으면 꺠져 ㅠ_ㅠ..
+
+페이지처리 링크를 바꿔봐.
+<form 태그를 이용하자>
+page 번호랑 amount를 전달해야겠지.
+
+Hidden 태그 ? ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+어제는 a 태그만들면서 링크를 만들. .지저분
+
+그거 줄여봐..
+
+page-link 클릭시. 
+var targetPage = $(this).attr("href");
+a태그는 한글위험 form 태그로 갈아타는데
+지금 자바스크립트 가는데 서버사이드에서 링크를ㅋㅋ
+스크립트 안먹히는 인터넷창에서는 개판되..
+
+ $("#actionForm input[name='page']")
+아이디가 액션폼 name 값이 page인 밸류값을...
+.val(targetPage) <-로 해줘
+
+
+ $(".page-link").on("click", function(e){
+	 
+	 e.preventDefault();
+	 var targetPage = $(this).attr("href");
+	 console.log("targetPage:" + targetPage);
+	 $("#actionForm input[name='page']").val(targetPage).submit();
+	 
+	 
+ });
+타겟페이지가 계속 바뀌는걸 볼 수 있음..
+
+바꾸니까 이젠 옮겨 ㅠㅠ
+뷰에서 그냥 번호만 옮기는걸로.
+게시물 클릭하면 bno, amount
+
+클릭하면 포
+
+action 
+
+
+오후 3시..
+
+지금 modify?bno=ewe만 나오는데 3개를..
+
+조회페이지
+http://localhost:8081/board/read?page=1&amount=10&bno=13291
+page, amount, bno 3개가 보내지니까 actionForm으로 먹여주자. 수정할떄 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+
+ var actionForm = $("#actionForm");
+달러 왜붙여주냐? ㅇㅇ
+
+        <form id = "actionForm" action = "/board/modify" method = "get">
+        
+        	<input type="hidden" name="bno" value="${cri.bno }">
+			<input type="hidden" name="page" value="${cri.page }">
+			<input type="hidden" name="amount" value="${cri.amount}">
+		</form>
+        
+        </form>
+ 
+ <script>
+ 
+ var actionForm = $("#actionForm");
+ $(".modBtn").on("click", function(e){
+	
+		actionForm.submit();
+	});
+ 
+ $(".listBtn").on("click", function(e){
+		e.preventDefault();
+		var targetPage = $(this).attr("href");
+		console.log("targetPage: " + targetPage);
+		actionForm.find("input[name='page']").val(targetPage).submit();
+		actionForm.submit();
+	});
+
+Go to List.
+
+
+4시;
+320개 숫자를 바..
+데이터가 수천건 
+데이터를 가져올때 count 매소드를 추가할껀데
+total 카운트는 select bno 하면.
+
+
+검색 데이터가 몇건일때 
+쿼리 카운터 처리..
+
+mapper .java; ->ma.xml -> (크리테리아)G,Sservice -> 보드컨트롤러
+
+
+
+
+
+
+-------------------
+list에서 쿼리 두번
+목록 : 
+select :
+
+제목이 홍길동 검색->
+제목이 홍길동인얘 검색 .......... 1
+홍길동에 갯수를 검색..............2
+
+
+http://www.mybatis.org/mybatis-3/ko/dynamic-sql.html
+--mybatis 동적쿼리..
+한번만 날리자 이거....
+
+
+case by case 노가다 안하고 싶으니까
+
+map으로 만들어서 보내
+
+
+
+
+
+
+

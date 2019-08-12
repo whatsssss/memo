@@ -1,0 +1,72 @@
+화살표 함수 일반 함수/
+const(함수형) let 변수.. 
+
+jsfiddle
+
+https://codesandbox.io/
+리액트..
+
+js dom 
+가상 돔 / 랜더링
+
+
+facebook! 
+데이터를 어떻게 전달? 호출?
+
+props / state 방향../
+
+체크를 한다-> 상태가 변한다.
+액션 . 이벤트 index로 전달한다.
+oop 개념에서
+A랑 B가 연결되어있을때
+B에서 A를 변화시킬때 어캐하냐?
+
+레퍼런스를 전달해야 하는 방법.
+리모콘.~~~~~~~~~~~
+근데 A->B->c->c가 연결되있으면 A바꿀때 a~b~c~d를 거쳐야..
+
+컨텍스트개념~~~~~~~~~~~ <스프링처럼생각하자..>
+A랑 B가 동일한 컨텍스트에 있다고 하는거야. 
+동일 선상이면 A의 상태를 바꿔주세용^^~	
+
+
+리액트의 props는 함수도 전달해줄 수 있어요~~~ 숫자 문자열뿐 아니라.
+
+
+단방향 / 양방향-> angular
+
+
+  increase = () => {
+        alert("increase")
+    }
+
+
+
+import React, {Component} from 'react' //Fragment <div> 필요없어
+import CounterButton from './CounterButton';
+
+export default class Counter extends Component{
+    constructor(){
+        super()
+        this.state = {
+            count : 0
+        }
+    }
+
+    increase = () => {
+        alert("increase")
+    }
+
+
+    render(){
+        return(
+            <div>
+                <h1>{this.state.count}</h1>
+                <CounterButton fn={this.increase}></CounterButton>
+            </div>
+        )
+    }
+}
+
+
+jquery 입력값을 얻는것을.............

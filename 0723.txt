@@ -1,0 +1,17 @@
+xml 설정? java 설정 ?
+
+자바설정 하는 이유/
+톰캣 보면 web.xml이 없는디 
+그러면 자바설정을..
+
+모노리틱 개발
+-스프링이 추구하는 거는 모노리틱 ..
+-부트가..마이크로 서비스 아키텍트
+넷플릭스........ 메일...........
+
+web. 서블릿 뤁,...
+
+xml없는 java 웹환겨?
+http://blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220631127129&parentCategoryNo=&categoryNo=6&viewDate=&isShowPopularPosts=false&from=postView
+
+http://www.33gram.com/maven-failonmissingwebxml-%EC%84%A4%EC%A0%95/
